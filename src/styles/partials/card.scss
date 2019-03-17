@@ -6,14 +6,29 @@
     background: white;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(85, 85, 85, 0.383);
+
+    &--link {
+
+        
+
+        &:link {color: inherit;}
+        &:visited {color: inherit;}
+        &:hover {color: inherit;}
+        &:active{color: inherit;}
+    }
 
     &--img-container {
-
+        
+        overflow: hidden;
+        position: relative;
+        top: -35px;
+        left: -11%;
+        width: 123%;
+        max-height: 300px;
+        
         img{
-            position: relative;
-            top: -35px;
-            left: -10%;
-            width: 120%;
+            width: 100%;
         }
     }
 }

@@ -6,7 +6,7 @@ export default class CharacterComponent extends React.Component {
         return (
             <div className="[ col-sm-4 ]">
                 <div className="[ card ]">
-                    <a href={'#/character-specfic/'+this.props.id} >
+                    <a className="[ card--link ]" href={'#/character-specfic/'+this.props.id} >
                         <div className="[ card--img-container ]">
                             <img src={this.props.image} />
                         </div>
