@@ -74,14 +74,14 @@ export default class Homepage extends React.Component {
         const app = this;
         app.createCards();
         return (
-            <div className="[ row ]">
-                <div className="[ col-sm-12 ]">
+            <div className="[ row ][ homepage ]">
+                <div className="[ col-sm-12 ][ homepage--contianer ]">
                     <h2>
                         Home Page
                     </h2>
                 </div>
                 <div className="[ col-sm-12 ]">
-                    <Search onSearchTerm={app.handleSearchTerm}></Search>
+                    <Search className="[ homepage--search-bar ]" onSearchTerm={app.handleSearchTerm}></Search>
                 </div>
                 <div className="[ col-sm-12 ]">
                     {app.state.rickMortyCards}
