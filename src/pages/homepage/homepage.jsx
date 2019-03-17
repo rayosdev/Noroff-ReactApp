@@ -9,6 +9,7 @@ export default class Homepage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            rickMortyObjAll: [],
             rickMortyObj: [],
             rickMortyCards: []
         }
@@ -29,14 +30,16 @@ export default class Homepage extends React.Component {
         })
         .then(result => {
             app.setState({
-                rickMortyObj: result.results
+                rickMortyObj: result.results,
+                rickMortyObjAll: result.results,
             });
         });
     }
 
     handleSearchTerm(searchTerm) {
         const app = this;
-        let characterObj = app.state.rickMortyObj;
+        console.log(app.state.rickMortyObjAll)
+        let characterObj = app.state.rickMortyObjAll;
 
         let characters = characterObj.filter((character) => {
             return character.name.indexOf(searchTerm) !== -1;
