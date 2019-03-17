@@ -37,6 +37,7 @@ export default class CharacterSpecific extends React.Component {
         let specificCharacter = <CharacterSpecificComponent image={app.state.rickMortyObj.image}
                                                             name={app.state.rickMortyObj.name}
                                                             species={app.state.rickMortyObj.species}
+                                                            gender={app.state.rickMortyObj.gender}
         >
         </CharacterSpecificComponent>;
         return (

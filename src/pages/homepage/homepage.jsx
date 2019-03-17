@@ -38,7 +38,6 @@ export default class Homepage extends React.Component {
 
     handleSearchTerm(searchTerm) {
         const app = this;
-        console.log(app.state.rickMortyObjAll)
         let characterObj = app.state.rickMortyObjAll;
 
         let characters = characterObj.filter((character) => {
